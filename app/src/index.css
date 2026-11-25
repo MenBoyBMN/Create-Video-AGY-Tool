@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-canvas: #0a0a0b;
+  --bg-base: #111113;
+  --bg-panel: #161618;
+  --bg-elevated: #1c1c1f;
+  --bg-hover: #232327;
+  --border-subtle: #26262a;
+  --border-strong: #323238;
+  --accent-primary: #2563eb;
+  --accent-hover: #3b82f6;
+  --playhead-red: #ef4444;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2e2e34 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2e2e34;
+    border-radius: 999px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #3f3f46;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.studio-input {
+  @apply w-full rounded-[5px] bg-[#111113] border border-[#26262a] px-2.5 py-1.5 text-[12px] text-zinc-100 placeholder-zinc-500 transition-colors duration-100 hover:border-[#323238] focus:outline-none focus:border-blue-500 focus-visible:ring-2 focus-visible:ring-blue-500/35 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.studio-label {
+  @apply block text-[11px] font-medium text-zinc-400 mb-1.5;
+}
+
+.studio-btn {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-[5px] px-2.5 py-1.5 text-[12px] font-medium border border-transparent select-none cursor-pointer transition-all duration-100 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 focus-visible:ring-offset-1 focus-visible:ring-offset-[#111113] disabled:opacity-45 disabled:pointer-events-none;
+}
+
+.studio-btn-ghost {
+  @apply studio-btn bg-[#1c1c1f] hover:bg-[#232327] text-zinc-200 border-[#26262a] hover:border-[#323238];
+}
+
+.studio-btn-primary {
+  @apply studio-btn bg-[#2563eb] hover:bg-[#3b82f6] text-white font-semibold border-[#3b82f6]/40;
+}
+
+.studio-btn-danger {
+  @apply studio-btn bg-[#2a1517] hover:bg-[#3b1c1f] text-red-300 border-red-500/30 hover:border-red-500/50;
+}
+
+.studio-icon-btn {
+  @apply inline-flex items-center justify-center rounded-[5px] p-1.5 text-zinc-400 hover:text-zinc-100 hover:bg-[#232327] border border-transparent transition-all duration-100 active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 disabled:opacity-40 disabled:pointer-events-none;
+}

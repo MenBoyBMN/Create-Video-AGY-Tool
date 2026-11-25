@@ -1,0 +1,18 @@
+{
+  "id": "2026-11-23_agy-studio-showcase",
+  "title": "AGY Video Studio — 60FPS Motion Engine",
+  "aspect": "16:9",
+  "status": "draft",
+  "preset": "saas-motion",
+  "voice": "vi-VN-HoaiMyNeural",
+  "speechRate": "+0%",
+  "bgmTrack": "bgm_ambient_tech",
+  "bgmVolume": 0.16,
+  "durationSec": 23.2,
+  "totalFrames": 1392,
+  "beatCount": 3,
+  "thumbnail": "",
+  "exportPath": "",
+  "createdAt": "2026-11-23T09:35:09.251Z",
+  "updatedAt": "2026-11-23T09:35:09.251Z"
+}

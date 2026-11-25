@@ -1,0 +1,20 @@
+# AGY Video Studio v2 — Core Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Free Vietnamese & Multilingual Neural TTS (default fallback, no API key required)
+edge-tts>=7.0.0
+
+# Word-level timestamp alignment (CUDA FP16 on NVIDIA GPU / CPU int8 fallback)
+faster-whisper>=1.1.0
+
+# Gemini Native TTS (Expressive single-speaker & Multi-Speaker dialogue, Free Tier key)
+google-genai>=1.0.0
+
+# Audio DSP, waveform peak analysis & Visual QA image inspection
+numpy>=1.26.0
+scipy>=1.13.0
+Pillow>=10.4.0
+
+# Optional: Offline Vietnamese 3-region TTS & Voice Cloning
+# Run: python scripts/setup-vieneu-tts.py --install
+# soundfile>=0.12.1

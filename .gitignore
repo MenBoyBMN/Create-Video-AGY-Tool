@@ -1,0 +1,43 @@
+# Dependencies & build artifacts
+node_modules/
+dist/
+dist-electron/
+release/
+.remotion/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Secrets, machine-local configs & agent bridge paths
+.env
+.env.*
+!.env.example
+**/.env
+**/app-path.json
+
+# Python caches & virtual environments
+**/__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Generated / user-cloned audio binaries
+engine/audio/sfx_library/*.wav
+engine/audio/voices/*
+!engine/audio/voices/README.txt
+
+# Rendered exports
+exports/*
+!exports/.gitkeep
+
+# User projects (keep only lightweight demo showcase blueprint)
+projects/*
+!projects/.gitkeep
+!projects/2026-11-23_agy-studio-showcase/
+projects/2026-11-23_agy-studio-showcase/*
+!projects/2026-11-23_agy-studio-showcase/project.json
+!projects/2026-11-23_agy-studio-showcase/storyboard.json
+!projects/2026-11-23_agy-studio-showcase/scenes/

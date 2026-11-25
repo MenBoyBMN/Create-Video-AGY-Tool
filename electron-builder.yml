@@ -1,0 +1,38 @@
+appId: com.agy.videostudio
+productName: AGY-Video-Studio
+executableName: AGY-Video-Studio
+asar: false
+directories:
+  output: release
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+extraFiles:
+  - from: cli
+    to: cli
+  - from: engine
+    to: engine
+    filter:
+      - "**/*"
+      - "!**/__pycache__/**"
+      - "!**/*.pyc"
+      - "!**/*.pyo"
+      - "!audio/voices/*.wav"
+      - "!audio/voices/*.mp3"
+  - from: app.config.json
+    to: app.config.json
+  - from: .env.example
+    to: .env.example
+  - from: README.md
+    to: README.md
+  - from: requirements.txt
+    to: requirements.txt
+  - from: projects/.gitkeep
+    to: projects/.gitkeep
+  - from: exports/.gitkeep
+    to: exports/.gitkeep
+win:
+  target:
+    - dir
+  signAndEditExecutable: false

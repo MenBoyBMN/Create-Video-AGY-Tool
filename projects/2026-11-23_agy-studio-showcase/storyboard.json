@@ -1,0 +1,83 @@
+{
+  "version": "1.0",
+  "title": "AGY Video Studio — 60FPS Motion Engine",
+  "aspect": "16:9",
+  "fps": 60,
+  "voice": "vi-VN-HoaiMyNeural",
+  "speechRate": "+4%",
+  "theme": {
+    "accentColor": "#38bdf8",
+    "secondaryColor": "#8b5cf6",
+    "bgColor": "#080b12",
+    "surfaceColor": "#10141e",
+    "textColor": "#f8fafc"
+  },
+  "bgm": {
+    "track": "bgm_ambient_tech",
+    "volume": 0.16
+  },
+  "showCaptions": true,
+  "beats": [
+    {
+      "id": "beat-1",
+      "badge": "PORTABLE DESKTOP STUDIO",
+      "title": "Làm Video 60FPS Bằng Code & Trực Quan",
+      "subtitle": "Kết nối hai chiều giữa AI AGY Studio và bàn dựng Desktop siêu mượt",
+      "narration": "Đừng mất hàng giờ cắt ghép thủ công nữa. AGY Video Studio kết hợp AI viết hoạt ảnh sáu mươi khung hình mỗi giây với bàn dựng trực quan ngay trên máy bạn.",
+      "keywords": ["AGY", "hoạt ảnh", "sáu mươi", "trực quan"],
+      "metrics": [
+        { "value": "60 FPS", "label": "Live Preview", "delta": "Remotion Engine" },
+        { "value": "-14 LUFS", "label": "Studio Audio", "delta": "Auto Sidechain" }
+      ],
+      "steps": [
+        "Gọi /agy-video-studio từ bất kỳ khung chat nào",
+        "AI tự viết cảnh CustomScene & kiểm duyệt QA",
+        "Mở file exe tinh chỉnh Timeline và xuất MP4"
+      ],
+      "preset": "saas-motion",
+      "accentColor": "#38bdf8",
+      "cameraMove": "impact_shake",
+      "sfx": [
+        { "id": "sub_impact", "offsetMs": 0, "volume": 0.65 },
+        { "id": "pop", "offsetMs": 750, "volume": 0.45 }
+      ]
+    },
+    {
+      "id": "beat-2",
+      "badge": "HYBRID CUSTOM CODE",
+      "title": "Tốc Độ Sản Xuất Gấp 10 Lần",
+      "subtitle": "Cảnh điểm nhấn viết bằng React 60fps, tự động Hot-Reload tức thì",
+      "narration": "Với kiến trúc Hybrid, mọi cảnh quan trọng đều có thể viết riêng bằng code vật lý lò xo, tự đồng bộ sóng âm và đạt chuẩn phát sóng phòng thu.",
+      "keywords": ["Hybrid", "lò xo", "sóng âm", "phòng thu"],
+      "preset": "saas-motion",
+      "customScene": "Beat2VelocityChartScene",
+      "accentColor": "#8b5cf6",
+      "cameraMove": "slow_push_in",
+      "sfx": [
+        { "id": "whoosh_fast", "offsetMs": 0, "volume": 0.55 },
+        { "id": "chime_ping", "offsetMs": 950, "volume": 0.45 }
+      ]
+    },
+    {
+      "id": "beat-3",
+      "badge": "READY TO SHIP",
+      "title": "Một Thư Mục Portable — Chạy Mọi Nơi",
+      "subtitle": "Quản lý dự án, xem trước 60fps và xuất H.264 ngay trên Windows",
+      "narration": "Tất cả dự án và video xuất bản nằm gọn trong một thư mục duy nhất. Sẵn sàng sáng tạo video chuyên nghiệp ngay hôm nay.",
+      "keywords": ["Portable", "chuyên nghiệp", "hôm nay"],
+      "steps": [
+        "Tự đăng ký đường dẫn app-path.json",
+        "Không lo lỗi quyền ghi Windows UAC",
+        "Xuất bản H.264 60fps đa nhân CPU",
+        "Đẩy ngược cảnh cho AGY sửa bằng Code"
+      ],
+      "preset": "explainer-editorial",
+      "accentColor": "#10b981",
+      "cameraMove": "orbit_tilt",
+      "sfx": [
+        { "id": "shimmer_reveal", "offsetMs": 80, "volume": 0.5 },
+        { "id": "success_chord", "offsetMs": 1400, "volume": 0.5 }
+      ]
+    }
+  ]
+}
